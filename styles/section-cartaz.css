@@ -1,0 +1,25 @@
+.section-cartaz {
+    background: rgb(250,49,49);
+background: linear-gradient(90deg, rgba(250,49,49,1) 25%, rgba(241,255,0,1) 50%, rgba(255,0,0,1) 90%);
+}
+
+.section-title {
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+.card-body {
+    transform: scale(1);
+}
+
+.cards-section {
+    padding: 0 0 20px 0;
+}
+
+.card-text {
+    padding: 0 0 10px 0;
+}
+
+
+
+
