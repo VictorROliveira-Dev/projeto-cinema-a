@@ -63,6 +63,14 @@ strong {
     background-color: orange;
 }
 
+.carousel-indicators {
+    padding: 10px 0 10px 0;
+}
+
+.carousel-indicators .active {
+    background-color: red;
+}
+
 h2 {
     font-size: 48px;
     font-weight: 400px;
@@ -74,4 +82,12 @@ h5 {
 
 p {
     line-height: 20px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
 }

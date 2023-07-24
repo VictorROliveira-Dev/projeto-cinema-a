@@ -1,0 +1,32 @@
+.section-breve {
+    background-color: #F1C93B;
+    height: 70vh;
+}
+
+.section-breve .section-title {
+    color: black;
+}
+
+.section-breve .card {
+    height: 300px;
+}
+
+.card-bg {
+    background-color: #2C3333;
+    padding: 28px 0 10px 0;
+    margin: 0 60px 0 60px;
+    border-radius: 20px;
+}
+
+.card-breve {
+    height: 200px;
+}
+
+.section-breve .btn {
+    background-color: white;
+}
+
+.section-breve .btn:hover {
+    background-color: aqua;
+    border: 1px solid aqua
+}
