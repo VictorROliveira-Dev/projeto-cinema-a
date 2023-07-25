@@ -9,6 +9,11 @@
 
 .section-breve .card {
     height: 300px;
+    transition: 0.3s ease-in-out;
+}
+
+.section-breve .card:hover {
+    transform: scale(1.1);
 }
 
 .card-bg {
@@ -24,9 +29,12 @@
 
 .section-breve .btn {
     background-color: white;
+    border: 1px solid red;
+    color: red;
 }
 
 .section-breve .btn:hover {
-    background-color: aqua;
-    border: 1px solid aqua
+    background-color: red;
+    border: 1px solid red;
+    color: white;
 }

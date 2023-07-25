@@ -1,5 +1,7 @@
 .section-cartaz {
-    background-color: #CD1818;
+    background-image: url(../images/fundo-cinema.jpg);
+    background-repeat: no-repeat;
+    background-size: 1550px 1000px;
     height: 100vh;
     border-bottom: 6px solid black;
 }

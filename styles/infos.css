@@ -1,0 +1,5 @@
+.divs-facilidades {
+    width: 325px;
+    display: flex;
+    flex-wrap: wrap;
+}
