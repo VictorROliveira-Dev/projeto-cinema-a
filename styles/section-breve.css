@@ -17,8 +17,7 @@
 }
 
 .card-bg {
-    background-color: #2C3333;
-    padding: 28px 0 10px 0;
+    background-color: #C51605;
     margin: 0 60px 0 60px;
     border-radius: 20px;
 }
@@ -37,4 +36,8 @@
     background-color: red;
     border: 1px solid red;
     color: white;
+}
+
+.section-breve .cards-section {
+    padding: 25px 0 0 0;
 }

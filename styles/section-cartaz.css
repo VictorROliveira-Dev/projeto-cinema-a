@@ -1,18 +1,18 @@
 .section-cartaz {
     background-image: url(../images/fundo-cinema.jpg);
     background-repeat: no-repeat;
-    background-size: 1550px 1000px;
-    height: 100vh;
+    background-size: 1550px 550px;
+    height: 70vh;
     border-bottom: 6px solid black;
 }
 
 .card-img-top {
-  height: 300px;
+  height: 200px;
 }
 
 .section-title {
     text-align: center;
-    padding: 20px 0 20px 0;
+    padding: 30px 0 30px 0;
     color: white;
 }
 
@@ -23,24 +23,38 @@
 .card-body {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .card:hover {
-    transform: scale(0.9);
+    transform: scale(1.1);
 }
 
 .cards-section {
     padding: 0 0 20px 0;
+    height: 350px;
 }
 
-.card-text {
-    padding: 0 0 10px 0;
-    text-align: justify;
-    letter-spacing: normal;
+.section-cartaz .btn {
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+    font-size: 15px;
 }
 
+.section-cartaz .btn:hover {
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+}
 
+.link-cartaz {
+    color: black;
+}
 
+.link-cartaz:hover {
+    color: gray;
+}
 
