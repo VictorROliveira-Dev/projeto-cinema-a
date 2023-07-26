@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>Login</title>
+</head>
+
+<body>
+    <main class="container-main">
+        <section class="section-img">
+            <h1 class="section-title">Faça o login:</h1>
+            <img src="./images/login-img.svg" alt="Imagem login">
+        </section>
+
+        <section class="section-form">
+            <form class="form">
+                <h2 class="section-title">Login</h2>
+
+                <div class="input-box">
+                    <label for="login">Usuário:</label>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" id="login" name="login" placeholder="usuário" required>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="senha">Senha:</label>
+
+                    <div class="input-field">
+                        <i class="bi bi-shield-lock-fill"></i>
+                        <input type="password" id="senha" name="senha" placeholder="senha" required>
+                    </div>
+                </div>
+
+                <button class="button-login">Login</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

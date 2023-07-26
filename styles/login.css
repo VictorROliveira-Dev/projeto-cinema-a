@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #18181b;
+    font-family: 'Raleway', sans-serif;
+    margin: 75px auto 50px auto;
+}
+
+.container-main {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    background-color: #C51605;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.section-title {
+    color: white;
+    font-size: 2.25rem;
+    position: relative;
+    font-weight: bold;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    background-color: yellow;
+    width: 2.5rem;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+}
+
+.section-img img{
+    width: 32rem;
+    padding: 2rem;
+}
+
+.section-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    color: #fff;
+    background-color: #F86F03;
+    border-radius: 8px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.input-box {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3F2E3E;
+    padding: 0.3rem;
+    border-radius: 3px;
+    margin: 3px;
+}
+
+.input-field i {
+    color: white;
+    font-size: 1.3rem;
+    padding: 0.6rem 1rem;
+}
+
+.input-field input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
+    color: #f8fafc;
+    padding: 0 0.5rem;
+}
+
+.input-field input:focus {
+    outline: none;
+}
+
+.button-login {
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: red;
+    color: #fff;
+    padding: 0.5rem 0;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-login:hover {
+    background-color: #B31312;
+    color: white;
+}
+
+@media screen and (max-width: 950px) {
+    .form {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-main {
+        flex-direction: column;
+    }
+    .section-img h1{
+        display: none;
+    }
+
+    .section-img img {
+        width: 90%;
+        margin-top: 2rem;
+    }
+}
