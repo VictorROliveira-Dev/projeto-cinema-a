@@ -1,128 +1,123 @@
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #18181b;
-    font-family: 'Raleway', sans-serif;
-    margin: 75px auto 50px auto;
-}
-
-.container-main {
-    display: flex;
-    align-items: center;
-    gap: 3.5rem;
+    font-family:'Poppins', sans-serif;
     background-color: #C51605;
-    padding: 2rem;
-    border-radius: 8px;
 }
 
-.section-title {
-    color: white;
-    font-size: 2.25rem;
-    position: relative;
-    font-weight: bold;
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
 }
 
-.section-title::after {
-    position: absolute;
-    content: "";
-    background-color: yellow;
-    width: 2.5rem;
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    border-radius: 3px;
-}
-
-.section-img img{
-    width: 32rem;
-    padding: 2rem;
-}
-
-.section-form {
+.container {
+    width: 350px;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
-    color: #fff;
-    background-color: #F86F03;
-    border-radius: 8px;
+    padding: 0 15px 0 15px;
 }
 
-.form {
+span {
+    color: #FFF;
+    font-size: 15px;
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    justify-content: center;
+    padding: 15px 0 10px 0;
 }
 
-.input-box {
-    font-size: 1rem;
-    color: #fff;
-    font-weight: 400;
+h1 {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 10px 0;
 }
 
 .input-field {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #3F2E3E;
-    padding: 0.3rem;
-    border-radius: 3px;
-    margin: 3px;
+    flex-direction: column;
 }
 
-.input-field i {
-    color: white;
-    font-size: 1.3rem;
-    padding: 0.6rem 1rem;
-}
-
-.input-field input {
-    background-color: transparent;
+.input {
+    height: 45px;
+    width: 87%;
     border: none;
-    width: 100%;
-    font-size: 1.3rem;
-    color: #f8fafc;
-    padding: 0 0.5rem;
-}
-
-.input-field input:focus {
     outline: none;
+    border-radius: 30px;
+    color: #FFF;
+    padding: 0 0 0 40px;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-.button-login {
+i {
+    position: relative;
+    top: -33px;
+    left: 17px;
+    color: #FFF;
+}
+
+::-webkit-input-placeholder {
+    color: #FFF;
+}
+
+.submit {
     border: none;
-    font-size: 1.25rem;
-    font-weight: bold;
-    background-color: red;
-    color: #fff;
-    padding: 0.5rem 0;
-    border-radius: 3px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 100;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.25s ease-in-out;
 }
 
-.button-login:hover {
-    background-color: #B31312;
-    color: white;
+.submit:hover {
+    background-color: #FD8D14;
 }
 
-@media screen and (max-width: 950px) {
-    .form {
-        flex-direction: column;
-    }
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    color: #FFF;
+    margin-top: 10px;
 }
 
-@media screen and (max-width: 600px) {
-    .container-main {
-        flex-direction: column;
-    }
-    .section-img h1{
-        display: none;
-    }
-
-    .section-img img {
-        width: 90%;
-        margin-top: 2rem;
-    }
+.left input {
+    display: none;
 }
+
+.left input + label::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid gray;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+
+.left input:checked + label::before {
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: orange;
+    border: none;
+    padding: 3px;
+}
+
+label a {
+    color: #FFF;
+    text-decoration: none;
+    transition: 0.25s ease-in-out;
+}
+
+label a:hover {
+    color: #FD8D14;
+}
+
