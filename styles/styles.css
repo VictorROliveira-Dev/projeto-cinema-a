@@ -64,7 +64,7 @@ strong {
 }
 
 .carousel-indicators {
-    padding: 10px 0 10px 0;
+    padding: 20px;
 }
 
 .carousel-indicators .active {
@@ -90,4 +90,15 @@ p {
 
 .navbar-toggler:focus {
     box-shadow: none;
+}
+
+@media(max-width: 400px) {
+    .carousel-indicators {
+       display: none;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+    
 }

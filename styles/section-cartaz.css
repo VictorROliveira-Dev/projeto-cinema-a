@@ -7,7 +7,7 @@
 }
 
 .card-img-top {
-  height: 200px;
+    height: 200px;
 }
 
 .section-title {
@@ -17,6 +17,7 @@
 }
 
 .card {
+    width: 200px;
     transition: 0.3s ease-in-out;
 }
 
@@ -58,3 +59,58 @@
     color: gray;
 }
 
+@media(max-width: 400px) {
+    .section-cartaz {
+        background-size: 100vh;
+        height: 90vh;
+        width: 100%;
+        border-bottom: 6px solid black;
+    }
+
+    .section-title {
+        text-align: center;
+        padding: 10px 0 10px 0;
+        color: white;
+    }
+
+    .card {
+        display: block;
+        height: 200px;
+        width: 100px;
+    }
+
+    .card-img-top {
+        height: 100px;
+        width: 100px;
+    }
+
+    .card-title {
+        font-size: 10px;
+    }
+
+    .cards-cartaz {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        height: 200px;
+    }
+
+    .card-body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 4px;
+    }
+
+    .section-cartaz .btn {
+        font-size: 6px;
+        width: 60px;
+        height: 30px;
+        text-align: center;
+    }
+
+    .link-cartaz {
+        font-size: 8px;
+    }
+}
