@@ -92,7 +92,7 @@ p {
     box-shadow: none;
 }
 
-@media(max-width: 400px) {
+@media(max-width: 768px) {
     .carousel-indicators {
        display: none;
     }

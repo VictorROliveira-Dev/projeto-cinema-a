@@ -42,19 +42,19 @@
     padding: 25px 0 0 0;
 }
 
-@media(max-width: 360px) {
+@media(max-width: 768px) {
     .card-bg {
         background-color: #F1C93B;
     }
 
     .section-breve {
         background-color: #F1C93B;
-        height: 8s0vh;
+        height: 70vh;
     }    
 
     .section-breve .card {
         height: 180px;
-        width: 85px;
+        width: 103px;
         transition: 0.3s ease-in-out;
     }
 
@@ -70,7 +70,7 @@
 
     .card-breve {
         height: 100px;
-        width: 85px;
+        width: 101px;
     }
 
     .section-breve .btn {

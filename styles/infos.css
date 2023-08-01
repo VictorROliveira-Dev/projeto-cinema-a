@@ -1,0 +1,13 @@
+.title-footer {
+    font-size: 40px;
+}
+
+@media (max-width: 768px) {
+    .title-footer {
+        font-size: 25px;
+    }
+
+    .texts-footer {
+        font-size: 20px;
+    }
+}

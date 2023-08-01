@@ -11,6 +11,7 @@
 }
 
 .section-title {
+    font-size: 40px;
     text-align: center;
     padding: 30px 0 30px 0;
     color: white;
@@ -59,7 +60,7 @@
     color: gray;
 }
 
-@media(max-width: 360px) {
+@media(max-width: 768px) {
     .section-cartaz {
         background-size: 80vh;
         height: 75vh;
@@ -68,6 +69,7 @@
     }
 
     .section-title {
+        font-size: 20px;
         text-align: center;
         padding: 10px 0 10px 0;
         color: white;
@@ -75,12 +77,12 @@
 
     .card {
         height: 200px;
-        width: 100px;
+        width: 105px;
     }
 
     .card-img-top {
         height: 100px;
-        width: 100px;
+        width: 103px;
     }
 
     .card-title {
