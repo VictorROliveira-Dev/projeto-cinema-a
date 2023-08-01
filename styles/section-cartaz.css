@@ -61,8 +61,8 @@
 
 @media(max-width: 400px) {
     .section-cartaz {
-        background-size: 100vh;
-        height: 90vh;
+        background-size: 75vh;
+        height: 70vh;
         width: 100%;
         border-bottom: 6px solid black;
     }
@@ -90,7 +90,7 @@
     .cards-cartaz {
         display: flex;
         flex-wrap: wrap;
-        gap: 8px;
+        gap: 18px;
     }
 
     .card-body {

@@ -47,6 +47,11 @@
         background-color: #F1C93B;
     }
 
+    .section-breve {
+        background-color: #F1C93B;
+        height: 60vh;
+    }    
+
     .section-breve .card {
         height: 180px;
         width: 85px;
