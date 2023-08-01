@@ -41,3 +41,38 @@
 .section-breve .cards-section {
     padding: 25px 0 0 0;
 }
+
+@media(max-width: 400px) {
+    .card-bg {
+        background-color: #F1C93B;
+    }
+
+    .section-breve .card {
+        height: 180px;
+        width: 85px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .cards-cartaz-breve {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .card-title-breve {
+        font-size: 9px;
+    }
+
+    .card-breve {
+        height: 100px;
+        width: 85px;
+    }
+
+    .section-breve .btn {
+        font-size: 8px;
+        width: 60px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+    }
+}

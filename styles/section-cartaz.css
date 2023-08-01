@@ -74,7 +74,6 @@
     }
 
     .card {
-        display: block;
         height: 200px;
         width: 100px;
     }
@@ -85,32 +84,31 @@
     }
 
     .card-title {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .cards-cartaz {
         display: flex;
         flex-wrap: wrap;
-        gap: 15px;
-        height: 200px;
+        gap: 8px;
     }
 
     .card-body {
         display: flex;
         align-items: center;
         flex-direction: column;
-        justify-content: space-evenly;
-        gap: 4px;
+        justify-content: space-between;
+        gap: 2px;
     }
 
     .section-cartaz .btn {
         font-size: 6px;
         width: 60px;
         height: 30px;
-        text-align: center;
     }
 
     .link-cartaz {
         font-size: 8px;
+        padding-top: 2px;
     }
 }

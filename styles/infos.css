@@ -1,5 +1,16 @@
-.divs-facilidades {
+.infos-section {
     width: 325px;
     display: flex;
-    flex-wrap: wrap;
+}
+
+.divs-infos  {
+    display: flex;
+    font-size: 500px;
+}
+
+@media (min-width: 768px) {
+    .divs-infos {
+        display: flex;
+
+    }
 }
