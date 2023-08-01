@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./styles/section-cartaz.css">
     <link rel="stylesheet" href="./styles/section-breve.css">
     <link rel="stylesheet" href="./styles/infos.css">
+    <link rel="stylesheet" href="./styles/modal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <title>Cine Eldorado</title>
@@ -32,13 +33,13 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Programação</a>
+                        <a class="nav-link" aria-current="page" href="#">Programação</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./login.html" target="_blank">Login</a>
+                        <a class="nav-link" aria-current="page" href="./login.html">Login</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -93,8 +94,30 @@
                 <img src="./images/barbie-card.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-center">Barbie</h5>
-                    <a href="#" class="btn button-cartaz btn-danger fw-bold">Comprar ingresso</a>
-                    <a href="#" class="link-cartaz">Sinopse</a>
+                    <a href="#" class="btn btn-danger fw-bold">Comprar ingresso</a>
+                    <a href="#" class="link-cartaz" data-bs-toggle="modal" data-bs-target="#janela-modal-1">Sinopse</a>
+                </div>
+            </div>
+
+            <div id="janela-modal-1" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Sinopse Barbie:</h3>
+                            <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <img src="./images/barbie-card.jpg" class="card-img-modal" alt="...">
+                            <p class="modal-text">Depois de ser expulsa da Barbieland por ser uma boneca de aparência
+                                menos do que
+                                perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.</p>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -103,7 +126,33 @@
                 <div class="card-body">
                     <h5 class="card-title text-center">Missão Impossível</h5>
                     <a href="#" class="btn btn-danger fw-bold">Comprar ingresso</a>
-                    <a href="#" class="link-cartaz">Sinopse</a>
+                    <a href="#" class="link-cartaz" data-bs-toggle="modal" data-bs-target="#janela-modal-2">Sinopse</a>
+                </div>
+            </div>
+
+            <div id="janela-modal-2" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Sinopse Missão Impossível:</h3>
+                            <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <img src="./images/missao-impossivel-card.jpg" class="card-img-modal" alt="...">
+                            <p class="modal-text">Missão Impossível 7: Acerto de Contas Parte 1 é o sétimo capítulo da
+                                franquia de ação e espionagem iniciada em 1996, que acompanha o agente norte-americano
+                                Ethan Hunt (Tom Cruise) em missões altamente secretas e perigosas. Agora, no novo filme,
+                                Ethan e a equipe do IMF formada por Ilsa Faust (Rebecca Ferguson), Benji Dunn (Simon
+                                Pegg) e Luther Stickell (Ving Rhames) recebem outra importante missão: eles devem
+                                rastrear uma nova e aterrorizante arma que, se cair nas mãos erradas, pode representar
+                                uma ameaça para toda a humanidade.</p>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -112,7 +161,28 @@
                 <div class="card-body">
                     <h5 class="card-title text-center">Oppenheimer</h5>
                     <a href="#" class="btn btn-danger fw-bold">Comprar ingresso</a>
-                    <a href="#" class="link-cartaz">Sinopse</a>
+                    <a href="#" class="link-cartaz" data-bs-toggle="modal" data-bs-target="#janela-modal-3">Sinopse</a>
+                </div>
+            </div>
+
+            <div id="janela-modal-3" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Sinopse Oppenheimer:</h3>
+                            <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <img src="./images/oppenheimer-card.jpg" class="card-img-modal" alt="...">
+                            <p class="modal-text">O físico J. Robert Oppenheimer trabalha com uma equipe de cientistas
+                                durante o Projeto Manhattan, levando ao desenvolvimento da bomba atômica.</p>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -121,7 +191,32 @@
                 <div class="card-body">
                     <h5 class="card-title text-center">Megatubarão 2</h5>
                     <a href="#" class="btn btn-danger fw-bold">Comprar ingresso</a>
-                    <a href="#" class="link-cartaz">Sinopse</a>
+                    <a href="#" class="link-cartaz" data-bs-toggle="modal" data-bs-target="#janela-modal-4">Sinopse</a>
+                </div>
+            </div>
+
+            <div id="janela-modal-4" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Sinopse Megatubarão 2:</h3>
+                            <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <img src="./images/megatubarao-card.jpg" class="card-img-modal" alt="...">
+                            <p class="modal-text">Prepara-te para a maior adrenalina deste verão com "Meg 2: O Regresso
+                                do Tubarão Gigante", uma aventura emocionante que ultrapassa o sucesso de bilheteiras de
+                                2018 e leva a ação ainda mais longe, em mergulhos mais profundos com enormes Megs e
+                                muito mais! Mergulha em águas desconhecidas com Jason Statham e o ícone mundial de ação,
+                                Wu Jinh, enquanto estes lideram uma ousada equipa de pesquisa num mergulho exploratório
+                                nas profundezas mais profundas do oceano.</p>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -130,7 +225,29 @@
                 <div class="card-body">
                     <h5 class="card-title text-center">Elementos</h5>
                     <a href="#" class="btn btn-danger fw-bold">Comprar ingresso</a>
-                    <a href="#" class="link-cartaz">Sinopse</a>
+                    <a href="#" class="link-cartaz" data-bs-toggle="modal" data-bs-target="#janela-modal-5">Sinopse</a>
+                </div>
+            </div>
+
+            <div id="janela-modal-5" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Sinopse Elementos:</h3>
+                            <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <img src="./images/elementos-card.jpg" class="card-img-modal" alt="...">
+                            <p class="modal-text">Em uma cidade onde os habitantes de fogo, água, terra e ar convivem,
+                                uma jovem mulher flamejante e um rapaz que vive seguindo o fluxo descobrem algo
+                                surpreendente, porém elementar: o quanto eles têm em comum.</p>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -145,7 +262,30 @@
                     <img src="./images/besouro-azul-card.jpg" class="card-breve card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title card-title-breve text-center">Besouro Azul</h5>
-                        <a href="#" class="btn btn-info fw-bold">Sinopse</a>
+                        <a href="#" class="btn btn-info fw-bold" data-bs-toggle="modal"
+                            data-bs-target="#janela-modal-6">Sinopse</a>
+                    </div>
+                </div>
+
+                <div id="janela-modal-6" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Sinopse Besouro Azul:</h3>
+                                <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <img src="./images/besouro-azul-card.jpg" class="card-img-modal" alt="...">
+                                <p class="modal-text">O adolescente Jaime Reyes ganha superpoderes quando um misterioso
+                                    escaravelho se prende à sua coluna e lhe fornece uma poderosa armadura alienígena
+                                    azul.</p>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -161,7 +301,31 @@
                     <img src="./images/missao-sobrevivencia-card.jpg" class="card-breve card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title card-title-breve text-center">Missão Sobrevivência</h5>
-                        <a href="#" class="btn btn-info fw-bold">Sinopse</a>
+                        <a href="#" class="btn btn-info fw-bold" data-bs-toggle="modal"
+                            data-bs-target="#janela-modal-8">Sinopse</a>
+                    </div>
+                </div>
+
+                <div id="janela-modal-8" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Sinopse Missão Sobrevivência:</h3>
+                                <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <img src="./images/missao-sobrevivencia-card.jpg" class="card-img-modal" alt="...">
+                                <p class="modal-text">Um agente disfarçado da CIA fica preso em território hostil no
+                                    Afeganistão depois que sua missão é exposta. Acompanhado por seu tradutor, ele deve
+                                    lutar contra combatentes inimigos enquanto tenta chegar a um ponto de extração em
+                                    Kandahar.</p>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -169,7 +333,30 @@
                     <img src="./images/ursinho-pooh-card.jpg" class="card-breve card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title card-title-breve text-center">Ursinho Pooh</h5>
-                        <a href="#" class="btn btn-info fw-bold">Sinopse</a>
+                        <a href="#" class="btn btn-info fw-bold" data-bs-toggle="modal"
+                            data-bs-target="#janela-modal-9">Sinopse</a>
+                    </div>
+                </div>
+
+                <div id="janela-modal-9" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Sinopse Ursinho Pooh:</h3>
+                                <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <img src="./images/ursinho-pooh-card.jpg" class="card-img-modal" alt="...">
+                                <p class="modal-text">Christopher Robin vai para a faculdade e não tem mais tempo de
+                                    cuidar de Pooh e Leitão. Quando a vida dos personagens se torna difícil, eles
+                                    precisam se virar sozinhos e acabam se voltando às suas raízes animalescas.</p>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

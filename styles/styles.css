@@ -12,6 +12,10 @@ strong {
     color: red;
 }
 
+.nav-icon {
+    color: red;
+}
+
 .nav-link {
     color: black;
     position: relative;
@@ -94,11 +98,16 @@ p {
 
 @media(max-width: 768px) {
     .carousel-indicators {
-       display: none;
+        display: none;
     }
 
     h2 {
         font-size: 20px;
     }
-    
+
+
+    .nav-icon {
+        color: black;
+        padding: 4px;
+    }
 }
