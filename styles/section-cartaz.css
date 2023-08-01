@@ -59,10 +59,10 @@
     color: gray;
 }
 
-@media(max-width: 400px) {
+@media(max-width: 360px) {
     .section-cartaz {
-        background-size: 75vh;
-        height: 70vh;
+        background-size: 80vh;
+        height: 75vh;
         width: 100%;
         border-bottom: 6px solid black;
     }
