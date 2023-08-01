@@ -61,7 +61,7 @@
     .cards-cartaz-breve {
         display: flex;
         flex-wrap: wrap;
-        gap: 6px;
+        gap: 12px;
     }
 
     .card-title-breve {
