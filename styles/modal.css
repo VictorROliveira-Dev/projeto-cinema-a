@@ -16,3 +16,9 @@
 .modal-text {
     text-align: justify;
 }
+
+@media (min-width: 768px) {
+    .button-modal {
+        font-size: 20px;
+    }
+}

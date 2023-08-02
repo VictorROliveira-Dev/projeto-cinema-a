@@ -33,13 +33,19 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        <div class="d-flex">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Programação</a>
+                        <div class="d-flex">
+                            <a class="nav-link" aria-current="page" href="#">Programação</a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./login.html">Login</a>
+                        <div class="d-flex">
+                            <a class="nav-link" aria-current="page" href="./login.html">Login</a>
+                        </div>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -99,23 +105,23 @@
                 </div>
             </div>
 
-            <div id="janela-modal-1" class="modal fade">
-                <div class="modal-dialog">
+            <div class="modal fade" id="janela-modal-1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h3 class="modal-title">Sinopse Barbie:</h3>
-                            <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Sinopse Barbie:</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-
                         <div class="modal-body">
                             <img src="./images/barbie-card.jpg" class="card-img-modal" alt="...">
                             <p class="modal-text">Depois de ser expulsa da Barbieland por ser uma boneca de aparência
                                 menos do que
                                 perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.</p>
                         </div>
-
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-secondary text-sm-end"
+                                data-bs-dismiss="modal">Fechar</button>
                         </div>
                     </div>
                 </div>
@@ -130,27 +136,25 @@
                 </div>
             </div>
 
-            <div id="janela-modal-2" class="modal fade">
-                <div class="modal-dialog">
+            <div class="modal fade" id="janela-modal-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h3 class="modal-title">Sinopse Missão Impossível:</h3>
-                            <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Sinopse Missão Impossível:</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-
                         <div class="modal-body">
                             <img src="./images/missao-impossivel-card.jpg" class="card-img-modal" alt="...">
-                            <p class="modal-text">Missão Impossível 7: Acerto de Contas Parte 1 é o sétimo capítulo da
-                                franquia de ação e espionagem iniciada em 1996, que acompanha o agente norte-americano
-                                Ethan Hunt (Tom Cruise) em missões altamente secretas e perigosas. Agora, no novo filme,
+                            <p class="modal-text">Agora, no novo filme,
                                 Ethan e a equipe do IMF formada por Ilsa Faust (Rebecca Ferguson), Benji Dunn (Simon
                                 Pegg) e Luther Stickell (Ving Rhames) recebem outra importante missão: eles devem
                                 rastrear uma nova e aterrorizante arma que, se cair nas mãos erradas, pode representar
                                 uma ameaça para toda a humanidade.</p>
                         </div>
-
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-secondary text-sm-end"
+                                data-bs-dismiss="modal">Fechar</button>
                         </div>
                     </div>
                 </div>
@@ -290,10 +294,36 @@
                 </div>
 
                 <div class="card">
-                    <img src="./images/little-monster-card.jpg" class="card-breve card-img-top" alt="...">
+                    <img src="./images/dracula-card.jpg" class="card-breve card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title card-title-breve text-center">Little Monster</h5>
-                        <a href="#" class="btn btn-info fw-bold">Sinopse</a>
+                        <h5 class="card-title card-title-breve text-center">Drácula</h5>
+                        <a href="#" class="btn btn-info fw-bold" data-bs-toggle="modal"
+                            data-bs-target="#janela-modal-7">Sinopse</a>
+                    </div>
+                </div>
+
+                <div id="janela-modal-7" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Sinopse Drácula:</h3>
+                                <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <img src="./images/dracula-card.jpg" class="card-img-modal" alt="...">
+                                <p class="modal-text">A trama de DRÁCULA: A ÚLTIMA VIAGEM DO DEMÉTER conta a terrível
+                                    história do navio mercante Deméter, que foi fretado para transportar cargas
+                                    particulares — cinquenta caixotes de madeira sem identificação — de Carpathia a
+                                    Londres. Estranhos eventos acontecem à tripulação condenada enquanto tentam
+                                    sobreviver à viagem oceânica, perseguidos todas as noites por uma presença impiedosa
+                                    a bordo do navio.</p>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
