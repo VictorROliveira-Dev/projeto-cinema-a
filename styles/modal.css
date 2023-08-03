@@ -41,4 +41,18 @@
         gap: 4px;
         font-weight: bold;
     }
+
+    .section-cartaz .button-sinopse {
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+    .section-breve .button-sinopse {
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+    }
 }
