@@ -39,14 +39,14 @@
     height: 350px;
 }
 
-.section-cartaz .btn {
+.button-cards {
     background-color: white;
     border: 1px solid red;
     color: red;
     font-size: 15px;
 }
 
-.section-cartaz .btn:hover {
+.button-cards:hover {
     background-color: red;
     border: 1px solid red;
     color: white;

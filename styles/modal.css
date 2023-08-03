@@ -17,8 +17,28 @@
     text-align: justify;
 }
 
-@media (min-width: 768px) {
-    .button-modal {
-        font-size: 20px;
+.section-cartaz .button-modal {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-weight: bold;
+}
+
+.div-selects-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+@media (max-width: 768px) {
+    .section-cartaz .button-modal {
+        font-size: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        font-weight: bold;
     }
 }

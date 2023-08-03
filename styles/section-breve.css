@@ -26,13 +26,13 @@
     height: 200px;
 }
 
-.section-breve .btn {
+.section-breve .button-cards {
     background-color: white;
     border: 1px solid red;
     color: red;
 }
 
-.section-breve .btn:hover {
+.section-breve .button-cards:hover {
     background-color: red;
     border: 1px solid red;
     color: white;

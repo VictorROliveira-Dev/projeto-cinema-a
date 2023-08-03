@@ -46,11 +46,11 @@ strong {
     border: 1px solid gray;
 }
 
-.btn {
+.button-nav  {
     transition: 0.3s ease-in-out;
 }
 
-.btn:hover {
+.button-nav:hover {
     background-color: orange;
     border: 1px solid orange;
 }

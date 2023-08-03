@@ -39,18 +39,13 @@
                     </li>
                     <li class="nav-item">
                         <div class="d-flex">
-                            <a class="nav-link" aria-current="page" href="#">Programação</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="d-flex">
                             <a class="nav-link" aria-current="page" href="./login.html">Login</a>
                         </div>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-                    <button class="btn btn btn-danger fw-bold" type="submit">Pesquisar</button>
+                    <button class="button-nav btn btn-danger fw-bold" type="submit">Pesquisar</button>
                 </form>
             </div>
         </div>
@@ -100,8 +95,42 @@
                 <img src="./images/barbie-card.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-center">Barbie</h5>
-                    <a href="#" class="btn btn-danger fw-bold">Comprar ingresso</a>
+                    <a href="#" class="button-cards btn btn-danger fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#modal-compra-1">Comprar ingresso</a>
                     <a href="#" class="link-cartaz" data-bs-toggle="modal" data-bs-target="#janela-modal-1">Sinopse</a>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal-compra-1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Ingresso:</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./images/barbie-card.jpg" class="card-img-modal" alt="...">
+                            <div class="div-selects-cards">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Seleciona o tipo de ingresso</option>
+                                    <option value="1">Meia</option>
+                                    <option value="2">Inteira</option>
+                                </select>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Escolha a sessão</option>
+                                    <option value="1">18:00</option>
+                                    <option value="2">20:30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="button-modal btn btn-outline-danger text-sm-end"
+                                data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="button-modal btn btn-outline-success"><i class="
+                                bi bi-ticket-fill"></i>Comprar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -120,7 +149,7 @@
                                 perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.</p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary text-sm-end"
+                            <button type="button" class="btn btn-outline-danger text-sm-end"
                                 data-bs-dismiss="modal">Fechar</button>
                         </div>
                     </div>
@@ -131,8 +160,42 @@
                 <img src="./images/missao-impossivel-card.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-center">Missão Impossível</h5>
-                    <a href="#" class="btn btn-danger fw-bold">Comprar ingresso</a>
+                    <a href="#" class="button-cards btn btn-danger fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#modal-compra-2">Comprar ingresso</a>
                     <a href="#" class="link-cartaz" data-bs-toggle="modal" data-bs-target="#janela-modal-2">Sinopse</a>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal-compra-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Ingresso:</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./images/missao-impossivel-card.jpg" class="card-img-modal" alt="...">
+                            <div class="div-selects-cards">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Seleciona o tipo de ingresso</option>
+                                    <option value="1">Meia</option>
+                                    <option value="2">Inteira</option>
+                                </select>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Escolha a sessão</option>
+                                    <option value="1">18:00</option>
+                                    <option value="2">20:30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="button-modal btn btn-outline-danger text-sm-end"
+                                data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="button-modal btn btn-outline-success"><i class="
+                                bi bi-ticket-fill"></i>Comprar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -153,7 +216,7 @@
                                 uma ameaça para toda a humanidade.</p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary text-sm-end"
+                            <button type="button" class="btn btn-outline-danger text-sm-center"
                                 data-bs-dismiss="modal">Fechar</button>
                         </div>
                     </div>
@@ -164,27 +227,61 @@
                 <img src="./images/oppenheimer-card.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-center">Oppenheimer</h5>
-                    <a href="#" class="btn btn-danger fw-bold">Comprar ingresso</a>
+                    <a href="#" class="button-cards btn btn-danger fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#modal-compra-3">Comprar ingresso</a>
                     <a href="#" class="link-cartaz" data-bs-toggle="modal" data-bs-target="#janela-modal-3">Sinopse</a>
                 </div>
             </div>
 
-            <div id="janela-modal-3" class="modal fade">
-                <div class="modal-dialog">
+            <div class="modal fade" id="modal-compra-3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h3 class="modal-title">Sinopse Oppenheimer:</h3>
-                            <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Ingresso:</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
+                        <div class="modal-body">
+                            <img src="./images/oppenheimer-card.jpg" class="card-img-modal" alt="...">
+                            <div class="div-selects-cards">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Seleciona o tipo de ingresso</option>
+                                    <option value="1">Meia</option>
+                                    <option value="2">Inteira</option>
+                                </select>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Escolha a sessão</option>
+                                    <option value="1">18:00</option>
+                                    <option value="2">20:30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="button-modal btn btn-outline-danger text-sm-end"
+                                data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="button-modal btn btn-outline-success"><i class="
+                                bi bi-ticket-fill"></i>Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="modal fade" id="janela-modal-3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Sinopse Oppenheimer:</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
                         <div class="modal-body">
                             <img src="./images/oppenheimer-card.jpg" class="card-img-modal" alt="...">
                             <p class="modal-text">O físico J. Robert Oppenheimer trabalha com uma equipe de cientistas
                                 durante o Projeto Manhattan, levando ao desenvolvimento da bomba atômica.</p>
                         </div>
-
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-outline-danger text-sm-center"
+                                data-bs-dismiss="modal">Fechar</button>
                         </div>
                     </div>
                 </div>
@@ -194,31 +291,63 @@
                 <img src="./images/megatubarao-card.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-center">Megatubarão 2</h5>
-                    <a href="#" class="btn btn-danger fw-bold">Comprar ingresso</a>
+                    <a href="#" class="button-cards btn btn-danger fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#modal-compra-4">Comprar ingresso</a>
                     <a href="#" class="link-cartaz" data-bs-toggle="modal" data-bs-target="#janela-modal-4">Sinopse</a>
                 </div>
             </div>
 
-            <div id="janela-modal-4" class="modal fade">
-                <div class="modal-dialog">
+            <div class="modal fade" id="modal-compra-4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h3 class="modal-title">Sinopse Megatubarão 2:</h3>
-                            <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Ingresso:</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-
                         <div class="modal-body">
                             <img src="./images/megatubarao-card.jpg" class="card-img-modal" alt="...">
-                            <p class="modal-text">Prepara-te para a maior adrenalina deste verão com "Meg 2: O Regresso
-                                do Tubarão Gigante", uma aventura emocionante que ultrapassa o sucesso de bilheteiras de
-                                2018 e leva a ação ainda mais longe, em mergulhos mais profundos com enormes Megs e
-                                muito mais! Mergulha em águas desconhecidas com Jason Statham e o ícone mundial de ação,
-                                Wu Jinh, enquanto estes lideram uma ousada equipa de pesquisa num mergulho exploratório
-                                nas profundezas mais profundas do oceano.</p>
+                            <div class="div-selects-cards">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Seleciona o tipo de ingresso</option>
+                                    <option value="1">Meia</option>
+                                    <option value="2">Inteira</option>
+                                </select>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Escolha a sessão</option>
+                                    <option value="1">18:00</option>
+                                    <option value="2">20:30</option>
+                                </select>
+                            </div>
                         </div>
-
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="button-modal btn btn-outline-danger text-sm-end"
+                                data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="button-modal btn btn-outline-success"><i class="
+                                bi bi-ticket-fill"></i>Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="janela-modal-4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Sinopse Megatubarão 2:</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./images/megatubarao-card.jpg" class="card-img-modal" alt="...">
+                            <p class="modal-text">Megatubarão 2 é a sequência do filme lançado em 2018. No primeiro
+                                longa, na fossa mais profunda do Oceano Pacífico, a tripulação de um submarino fica
+                                presa após ser atacada por uma criatura pré-histórica que se achava estar extinta: um
+                                tubarão de mais de 20 metros de comprimento, conhecido como Megalodon.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-danger text-sm-center"
+                                data-bs-dismiss="modal">Fechar</button>
                         </div>
                     </div>
                 </div>
@@ -228,28 +357,62 @@
                 <img src="./images/elementos-card.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-center">Elementos</h5>
-                    <a href="#" class="btn btn-danger fw-bold">Comprar ingresso</a>
+                    <a href="#" class="button-cards btn btn-danger fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#modal-compra-5">Comprar ingresso</a>
                     <a href="#" class="link-cartaz" data-bs-toggle="modal" data-bs-target="#janela-modal-5">Sinopse</a>
                 </div>
             </div>
 
-            <div id="janela-modal-5" class="modal fade">
-                <div class="modal-dialog">
+            <div class="modal fade" id="modal-compra-5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h3 class="modal-title">Sinopse Elementos:</h3>
-                            <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Ingresso:</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
+                        <div class="modal-body">
+                            <img src="./images/elementos-card.jpg" class="card-img-modal" alt="...">
+                            <div class="div-selects-cards">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Seleciona o tipo de ingresso</option>
+                                    <option value="1">Meia</option>
+                                    <option value="2">Inteira</option>
+                                </select>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Escolha a sessão</option>
+                                    <option value="1">18:00</option>
+                                    <option value="2">20:30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="button-modal btn btn-outline-danger text-sm-end"
+                                data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="button-modal btn btn-outline-success"><i class="
+                                bi bi-ticket-fill"></i>Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="modal fade" id="janela-modal-5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Sinopse Elementos:</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
                         <div class="modal-body">
                             <img src="./images/elementos-card.jpg" class="card-img-modal" alt="...">
                             <p class="modal-text">Em uma cidade onde os habitantes de fogo, água, terra e ar convivem,
                                 uma jovem mulher flamejante e um rapaz que vive seguindo o fluxo descobrem algo
                                 surpreendente, porém elementar: o quanto eles têm em comum.</p>
                         </div>
-
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-outline-danger text-sm-center"
+                                data-bs-dismiss="modal">Fechar</button>
                         </div>
                     </div>
                 </div>
@@ -266,28 +429,29 @@
                     <img src="./images/besouro-azul-card.jpg" class="card-breve card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title card-title-breve text-center">Besouro Azul</h5>
-                        <a href="#" class="btn btn-info fw-bold" data-bs-toggle="modal"
+                        <a href="#" class="button-cards btn btn-info fw-bold" data-bs-toggle="modal"
                             data-bs-target="#janela-modal-6">Sinopse</a>
                     </div>
                 </div>
 
-                <div id="janela-modal-6" class="modal fade">
-                    <div class="modal-dialog">
+                <div class="modal fade" id="janela-modal-6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h3 class="modal-title">Sinopse Besouro Azul:</h3>
-                                <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Sinopse Besouro Azul:</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
-
                             <div class="modal-body">
                                 <img src="./images/besouro-azul-card.jpg" class="card-img-modal" alt="...">
                                 <p class="modal-text">O adolescente Jaime Reyes ganha superpoderes quando um misterioso
                                     escaravelho se prende à sua coluna e lhe fornece uma poderosa armadura alienígena
                                     azul.</p>
                             </div>
-
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-outline-danger text-sm-end"
+                                    data-bs-dismiss="modal">Fechar</button>
                             </div>
                         </div>
                     </div>
@@ -297,31 +461,30 @@
                     <img src="./images/dracula-card.jpg" class="card-breve card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title card-title-breve text-center">Drácula</h5>
-                        <a href="#" class="btn btn-info fw-bold" data-bs-toggle="modal"
+                        <a href="#" class="button-cards btn btn-info fw-bold" data-bs-toggle="modal"
                             data-bs-target="#janela-modal-7">Sinopse</a>
                     </div>
                 </div>
 
-                <div id="janela-modal-7" class="modal fade">
-                    <div class="modal-dialog">
+                <div class="modal fade" id="janela-modal-7" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h3 class="modal-title">Sinopse Drácula:</h3>
-                                <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Sinopse Drácula:</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
-
                             <div class="modal-body">
                                 <img src="./images/dracula-card.jpg" class="card-img-modal" alt="...">
-                                <p class="modal-text">A trama de DRÁCULA: A ÚLTIMA VIAGEM DO DEMÉTER conta a terrível
-                                    história do navio mercante Deméter, que foi fretado para transportar cargas
+                                <p class="modal-text">A trama de DRÁCULA: A ÚLTIMA VIAGEM DO DEMÉTER conta a
+                                    terrível história do navio mercante Deméter, que foi fretado para transportar cargas
                                     particulares — cinquenta caixotes de madeira sem identificação — de Carpathia a
-                                    Londres. Estranhos eventos acontecem à tripulação condenada enquanto tentam
-                                    sobreviver à viagem oceânica, perseguidos todas as noites por uma presença impiedosa
-                                    a bordo do navio.</p>
+                                    Londres.</p>
                             </div>
-
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-outline-danger text-sm-end"
+                                    data-bs-dismiss="modal">Fechar</button>
                             </div>
                         </div>
                     </div>
@@ -331,19 +494,20 @@
                     <img src="./images/missao-sobrevivencia-card.jpg" class="card-breve card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title card-title-breve text-center">Missão Sobrevivência</h5>
-                        <a href="#" class="btn btn-info fw-bold" data-bs-toggle="modal"
+                        <a href="#" class="button-cards btn btn-info fw-bold" data-bs-toggle="modal"
                             data-bs-target="#janela-modal-8">Sinopse</a>
                     </div>
                 </div>
 
-                <div id="janela-modal-8" class="modal fade">
-                    <div class="modal-dialog">
+                <div class="modal fade" id="janela-modal-8" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h3 class="modal-title">Sinopse Missão Sobrevivência:</h3>
-                                <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Missão Sobrevivência:</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
-
                             <div class="modal-body">
                                 <img src="./images/missao-sobrevivencia-card.jpg" class="card-img-modal" alt="...">
                                 <p class="modal-text">Um agente disfarçado da CIA fica preso em território hostil no
@@ -351,40 +515,44 @@
                                     lutar contra combatentes inimigos enquanto tenta chegar a um ponto de extração em
                                     Kandahar.</p>
                             </div>
-
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-outline-danger text-sm-end"
+                                    data-bs-dismiss="modal">Fechar</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
-                    <img src="./images/ursinho-pooh-card.jpg" class="card-breve card-img-top" alt="...">
+                    <img src="./images/the-marvels-card.jpg" class="card-breve card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title card-title-breve text-center">Ursinho Pooh</h5>
-                        <a href="#" class="btn btn-info fw-bold" data-bs-toggle="modal"
+                        <h5 class="card-title card-title-breve text-center">The Marvels</h5>
+                        <a href="#" class="button-cards btn btn-info fw-bold" data-bs-toggle="modal"
                             data-bs-target="#janela-modal-9">Sinopse</a>
                     </div>
                 </div>
 
-                <div id="janela-modal-9" class="modal fade">
-                    <div class="modal-dialog">
+                <div class="modal fade" id="janela-modal-9" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h3 class="modal-title">Sinopse Ursinho Pooh:</h3>
-                                <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">The Marvels:</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
-
                             <div class="modal-body">
-                                <img src="./images/ursinho-pooh-card.jpg" class="card-img-modal" alt="...">
-                                <p class="modal-text">Christopher Robin vai para a faculdade e não tem mais tempo de
-                                    cuidar de Pooh e Leitão. Quando a vida dos personagens se torna difícil, eles
-                                    precisam se virar sozinhos e acabam se voltando às suas raízes animalescas.</p>
+                                <img src="./images/the-marvels-card.jpg" class="card-img-modal" alt="...">
+                                <p class="modal-text">Carol Danvers (Brie Larson), também conhecida como Capitã Marvel,
+                                    precisa lidar com consequências não intencionais que a levam a carregar o fardo de
+                                    um universo desestabilizado. Quando seus deveres a enviam para um buraco de minhoca
+                                    anômalo, seus poderes se entrelaçam com os de outras duas super-heroínas, as
+                                    envolvendo em um misterioso fenômeno, fazendo com que elas troquem de lugar sem
+                                    entender a causa para tal, assim nascem As Marvels.</p>
                             </div>
-
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-outline-danger text-sm-end"
+                                    data-bs-dismiss="modal">Fechar</button>
                             </div>
                         </div>
                     </div>
