@@ -30,6 +30,7 @@
     background-color: white;
     border: 1px solid red;
     color: red;
+    font-size: 12px;
 }
 
 .section-breve .button-cards:hover {
@@ -42,7 +43,7 @@
     padding: 25px 0 0 0;
 }
 
-@media(max-width: 768px) {
+@media screen and (max-width: 420px) {
     .card-bg {
         background-color: #F1C93B;
     }
@@ -79,5 +80,6 @@
         height: 20px;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 }
