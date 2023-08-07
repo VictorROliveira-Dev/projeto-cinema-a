@@ -1,0 +1,149 @@
+*  {
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    color: black;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+.footer-contacts h3 {
+    margin-bottom: 0.75rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.footer-social .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: white;
+    border-radius: 50%;
+    transition: 0.4s ease-in-out;
+}
+
+.footer-social .footer-link i {
+    font-size: 1.25rem;
+}
+
+.footer-social .footer-link:hover {
+    opacity: 0.6;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background: #4267b3;
+}
+
+#whatsapp {
+    background: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: black;
+    transition: 0.4s ease-in-out;
+}
+
+.footer-list .footer-link:hover {
+    color: red;
+}
+
+.footer-mail {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer-mail p {
+    color: black;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 4px;
+}
+
+.input-group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 75%;
+    color: white;
+}
+
+.input-group button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 0 1.25rem;
+    font-size: 1.125rem;
+    height: 80%;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.input-group button:hover {
+    background-color: orange;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    padding: 1.2rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .input-group input {
+        all: unset;
+        padding: 0.75rem;
+        width: 70%;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .footer-content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
