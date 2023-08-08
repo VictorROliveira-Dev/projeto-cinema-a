@@ -22,23 +22,7 @@ strong {
 }
 
 .nav-link:hover {
-    border-bottom: 2px;
     color: red;
-}
-
-.nav-link::after {
-    content: "";
-    width: 0%;
-    height: 3px;
-    background-color: red;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 0.1s ease-in-out;
-}
-
-.nav-link:hover::after {
-    width: 100%;
 }
 
 .form-control:focus {
@@ -56,7 +40,7 @@ strong {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {
