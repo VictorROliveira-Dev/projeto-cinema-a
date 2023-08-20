@@ -2,6 +2,7 @@
     width: 60px;
     height: 30px;
     border: 2px solid orange;
+    background-color: #FFEBAD;
     border-radius: 60px;
     position: relative;
     cursor: pointer;
@@ -9,6 +10,7 @@
 
 .button-modes.modechange {
     border: 2px solid #D8D9DA;
+    background-color: #3F4E4F;
 }
 
 .button-modes:before {
@@ -43,6 +45,31 @@
 
 .navbar-toggler-icon.modechange {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.section-cartaz .card.modechange {
+    background-color: #272829;
+}
+
+.section-cartaz h5.modechange {
+    color: #FFF;
+}
+
+.section-cartaz a.modechange {
+    color: #FFF;
+    transition: 0.3s ease-in-out;
+}
+
+.section-cartaz a.modechange:hover {
+    color: red;
+}
+
+.section-breve .card.modechange {
+    background-color: #272829;
+}
+
+.section-breve h5.modechange {
+    color: #FFF;
 }
 
 footer.modechange {
