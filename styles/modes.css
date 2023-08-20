@@ -72,6 +72,23 @@
     color: #FFF;
 }
 
+.modal .modal-content.modechange {
+    background-color: #272829;
+}
+
+.modal-content .modal-title.modechange {
+    color: #FFF;
+}
+
+.modal-content .btn-close.dark{
+    color: #FFF;
+}
+
+.modal-content p.modechange {
+    color: #FFF;
+}
+
+
 footer.modechange {
     background: #272829;
     color: white;

@@ -5,6 +5,9 @@ const menuicon = document.querySelector('.navbar-toggler-icon');
 let cards = document.querySelectorAll('.card');
 let card_texts = document.querySelectorAll('h5');
 let button_cards = document.querySelectorAll('.button-cards');
+let modals = document.querySelectorAll('.modal-content');
+let modal_texts = document.querySelectorAll('.modal-title');
+let button_modal = document.querySelectorAll('.modal-header');
 let footer = document.querySelectorAll('footer');
 let footer_link = document.querySelectorAll('a');
 let footer_text = document.querySelectorAll('p');
@@ -25,6 +28,18 @@ btn.onclick = function () {
 
     button_cards.forEach(el => {
         el.classList.toggle('modechange');
+    })
+
+    modals.forEach(el => {
+        el.classList.toggle('modechange');
+    })
+
+    modal_texts.forEach(el => {
+        el.classList.toggle('modechange');
+    })
+
+    button_modal.forEach(el => {
+        el.classList.toggle('dark');
     })
 
     footer.forEach(el => {
